@@ -10,7 +10,6 @@
 
 - [A modern JavaScript router in 100 lines](http://krasimirtsonev.com/blog/article/A-modern-JavaScript-router-in-100-lines-history-api-pushState-hash-url)
 - [中文版](https://clarkdo.js.org/javascript/2014/09/04/22/)
-- [中文版2](https://segmentfault.com/a/1190000002928166)
 
 ## 1.1 优化
 
