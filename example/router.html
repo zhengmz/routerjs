@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Router Test</title>
+</head>
+
+<body>
+	<button onclick="Router.config({ mode: 'bash' }).check()">切换Hash模式</button>
+	<button onclick="Router.config({ mode: 'history' }).check()">切换History模式</button>
+	<button onclick="Router.check()">重新载入</button>
+	<p></p>
+	<a href="javascript:;" onclick="Router.navigate('/home')">home</a>
+	<a href="javascript:;" onclick="Router.navigate('/about')">about</a>
+	<a href="javascript:;" onclick="Router.navigate('/risk/5')">risk/5</a>
+	<p></p>
+	<button onclick="Router.navigate('/home')">home</button>
+	<button onclick="Router.navigate('/about')">about</button>
+	<button onclick="Router.navigate('/risk/5')">risk/5</button>
+	<p></p>
+	<h1 id="id">我是空白, 未应用路由</h1>
+	<script src="/dist/router.js"></script>
+	<!--
+	<script src="/dist/router.js"></script>
+	-->
+	<script>
+		// configuration
+		// Router.config({ mode: 'hash'});
+		// Router.config({ mode: 'hash', root: '/example'});
+		// Router.config({ mode: 'hash', root: '/example/router.html'});
+		// Router.config({ mode: 'history' });
+		// Router.config({ mode: 'history', root: '/example'});
+
+		// adding routes
+		Router
+			.add(/about/, function () {
+				console.log('about: 关于');
+				document.getElementById('id').innerHTML = Router.getFragment()
+			})
+			.add(/^([\w]+)[/]?([^/]+)?$/, function () {
+				console.log('regex: first=[' + arguments[0] + '], second=[' + arguments[1] + ']');
+				document.getElementById('id').innerHTML = Router.getFragment()
+			})
+			.add(/risk[/]?(\d+)?[/]?(\w+)?/, function () {
+				console.log('risk:', arguments);
+				document.getElementById('id').innerHTML = Router.getFragment()
+			})
+			// default route
+			.add(function () {
+				var fragment = Router.getFragment();
+				console.log('default: ' + fragment);
+				if (fragment === '') {
+					fragment = 'home';
+				}
+				document.getElementById('id').innerHTML = fragment;
+			})
+			.listen();
+	</script>
+</body>
+
+</html>
