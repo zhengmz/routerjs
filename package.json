@@ -1,6 +1,6 @@
 {
 	"name": "routerjs",
-	"version": "1.0.0",
+	"version": "0.1.0",
 	"description": "pure router for javascript",
 	"main": "router.js",
 	"scripts": {
@@ -12,7 +12,10 @@
 	},
 	"keywords": [
 		"router",
-		"javascript"
+		"pure",
+		"indepence",
+		"javascript",
+		"ie5+"
 	],
 	"author": "zhengmz",
 	"license": "MIT",
