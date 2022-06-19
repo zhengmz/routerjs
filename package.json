@@ -1,5 +1,5 @@
 {
-	"name": "routerjs",
+	"name": "pure-routerjs",
 	"version": "0.1.0",
 	"description": "pure router for javascript",
 	"main": "router.js",
