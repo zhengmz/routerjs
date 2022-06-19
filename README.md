@@ -37,7 +37,7 @@
 
 ### 2.2 使用步骤
 
-- 加载(支持UMD), 简单script加载如: `<script src="./dist/router/router.js"></script>`
+- 加载(支持UMD), 简单script加载如: `<script src="./router.js"></script>`
 - (可选)配置路由模式, 默认为hash模式, 设置history如`Router.config({ mode: 'history'})`
 - 添加路由, 如
 
@@ -55,7 +55,7 @@
 路由使用代码例子如下:
 
 ```html
-<script src="/dist/router/router.js"></script>
+<script src="./router.js"></script>
 <script>
   // configuration
   // Router.config({ mode: 'history', root: '/test/router'});
@@ -112,7 +112,7 @@
   <button onclick="Router.navigate('/about')">about</button>
   <button onclick="Router.navigate('/risk/5')">risk/5</button>
 </body>
-<script src="/dist/router/router.js"></script>
+<script src="./router.js"></script>
 <script>
   // Router.config({ mode: 'history', root: '/test/router'});
   Router

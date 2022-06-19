@@ -1,34 +1,23 @@
 {
-	"name": "pure-routerjs",
-	"version": "0.1.0",
-	"description": "pure router for javascript",
-	"main": "router.js",
-	"scripts": {
-		"start": "http-server"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/zhengmz/routerjs.git"
-	},
-	"keywords": [
-		"router",
-		"pure",
-		"indepence",
-		"javascript",
-		"ie5+"
-	],
-	"author": "zhengmz",
-	"license": "MIT",
-	"bugs": {
-		"url": "https://github.com/zhengmz/routerjs/issues"
-	},
-	"homepage": "https://github.com/zhengmz/routerjs#readme",
-	"devDependencies": {
-		"gulp": "^4.0.0",
-		"gulp-clean": "^0.4.0",
-		"gulp-jshint": "^2.1.0",
-		"gulp-rename": "^1.4.0",
-		"gulp-uglify": "^3.0.2",
-		"jshint": "^2.10.2"
-	}
+  "name": "pure-routerjs",
+  "version": "1.0.0",
+  "description": "pure router for javascript",
+  "main": "router.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhengmz/routerjs.git"
+  },
+  "keywords": [
+    "router",
+    "pure",
+    "indepence",
+    "javascript",
+    "ie5+"
+  ],
+  "author": "zhengmz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zhengmz/routerjs/issues"
+  },
+  "homepage": "https://github.com/zhengmz/routerjs#readme"
 }
